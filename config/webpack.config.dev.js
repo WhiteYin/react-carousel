@@ -97,7 +97,7 @@ const config = {
     plugins: [
         new WebpackRemoveHashedFiles(distDir),
         new HtmlWebpackPlugin({
-            title: '首页',
+            title: '轮播图',
             template: '../static/index.html',
             favicon: '../assets/favicon.ico'
         }),
