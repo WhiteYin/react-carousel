@@ -23,7 +23,7 @@ const config = {
         path: path.resolve(__dirname, '../dist'),
         filename: '[name].[chunkhash:5].js',
         // 生产环境publicPath值为cdn路径
-        publicPath: ''
+        publicPath: 'https://ox34ivs2j.bkt.clouddn.com/'
     },
     module: {
         rules: [
@@ -39,7 +39,6 @@ const config = {
                         {
                             loader: 'css-loader',
                             options: {
-                                url: false,
                                 minimize: true,
                                 sourceMap: true
                             }
@@ -61,7 +60,7 @@ const config = {
                     {
                         loader: 'file-loader',
                         options: {
-                            name: '[name].[ext]'
+                            name: 'assets/image/[name].[ext]'
                         }
                     }
                 ],
@@ -74,7 +73,7 @@ const config = {
         ],
     },
     plugins: [
-        new WebpackRemoveHashedFiles(distDir),
+        new WebpackRemoveHashedFiles(distDir,deleOption),
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('production')
         }),

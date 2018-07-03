@@ -61,8 +61,16 @@ class Item extends React.Component {
                 {
                     this.props.imgList.map((item, index) => {
                         return (
-                            <li key={'img-' + index} className="carousel-item" style={this.state.liStyle}>
-                                <a target="_blank" href={item.imgLink} className="carousel-item-img" style={{ backgroundImage: 'url(' + item.imgSrc + ')' }} />
+                            <li
+                                key={'img-' + index}
+                                className="carousel-item"
+                                style={this.state.liStyle}>
+                                <a
+                                    target="_blank"
+                                    href={item.imgLink}
+                                    className="carousel-item-img"
+                                    style={{ backgroundImage: 'url(' + item.imgSrc + ')' }}
+                                />
                             </li>
                         );
                     })

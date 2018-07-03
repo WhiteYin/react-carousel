@@ -7,23 +7,23 @@ import store from './Store';
 const imgList = [
     {
         imgLink: 'https://www.baidu.com',
-        imgSrc: 'https://b-ssl.duitang.com/uploads/item/201708/21/20170821230914_23WiR.jpeg'
+        imgSrc: '/assets/img/carousel-1.jpeg'
     },
     {
         imgLink: 'http://www.zhihu.com',
-        imgSrc: 'https://a-ssl.duitang.com/uploads/item/201806/22/20180622190827_PNGJ8.thumb.600_0.jpeg'
+        imgSrc: '/assets/img/carousel-2.jpeg'
     },
     {
         imgLink: 'https://sf.gg',
-        imgSrc: 'https://b-ssl.duitang.com/uploads/item/201806/22/20180622190717_GWuTc.thumb.600_0.jpeg'
+        imgSrc: '/assets/img/carousel-3.jpeg'
     },
     {
         imgLink: 'https://www.duitang.com',
-        imgSrc: 'https://b-ssl.duitang.com/uploads/item/201806/22/20180622190827_PUyQF.thumb.600_0.jpeg'
+        imgSrc: '/assets/img/carousel-4.jpeg'
     },
     {
         imgLink: 'https://www.github.com',
-        imgSrc: 'https://b-ssl.duitang.com/uploads/item/201806/22/20180622190827_AVvZQ.thumb.600_0.jpeg'
+        imgSrc: '/assets/img/carousel-5.jpeg'
     }
 ];
 
