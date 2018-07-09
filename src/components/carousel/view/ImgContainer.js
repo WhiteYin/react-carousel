@@ -3,9 +3,7 @@ import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import * as actions from '../actions';
 
-import '../style/item.less';
-
-class Item extends React.Component {
+class ImgContainer extends React.Component {
     constructor(props) {
         super(props);
         // 获取props中的数据
@@ -80,7 +78,7 @@ class Item extends React.Component {
     }
 }
 
-Item.propTypes = {
+ImgContainer.propTypes = {
     imgList: PropTypes.array.isRequired,
     currentIndex: PropTypes.number.isRequired,
     slideL2r: PropTypes.func.isRequired
@@ -101,4 +99,4 @@ const mapDispatchToProps = (dispatch, props) => {
     };
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Item);
+export default connect(mapStateToProps, mapDispatchToProps)(ImgContainer);
