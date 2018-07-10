@@ -73,7 +73,7 @@ const config = {
         ],
     },
     plugins: [
-        new WebpackRemoveHashedFiles(distDir,deleOption),
+        new WebpackRemoveHashedFiles(distDir),
         new webpack.DefinePlugin({
             'process.env.NODE_ENV': JSON.stringify('production')
         }),

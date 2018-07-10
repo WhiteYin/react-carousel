@@ -15,6 +15,7 @@ const IconContainer = ({ currentIndex, imgList, showImage }) => {
                             currentIndex={currentIndex}
                             index={index}
                             showImage={showImage}
+                            total={imgList.length}
                         />
                     );
                 })
